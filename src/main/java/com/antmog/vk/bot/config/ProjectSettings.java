@@ -1,4 +1,4 @@
-package com.antmog.vk.bot;
+package com.antmog.vk.bot.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
@@ -13,6 +13,8 @@ public class YAMLConfig {
     private String serverPort;
     private String clientId;
     private String clientSecret;
+    private String redirectUrl;
+    private String getCodeUrl;
 
     public String getServerName() {
         return serverName;
