@@ -17,6 +17,8 @@ public class ProjectSettings {
     private String getCodeUrl;
     private String authTokenEndpoint;
     private Integer applicationId;
+    private Integer scope;
 
     private Integer salovaGroupId;
+    private Integer myGroupId;
 }

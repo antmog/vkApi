@@ -9,4 +9,7 @@ public class GroupCommandParams {
     private int ownerId;
     private int count;
     private int offset;
+
+    private String message;
+    private int postId;
 }

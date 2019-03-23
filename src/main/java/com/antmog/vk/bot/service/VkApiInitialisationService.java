@@ -13,7 +13,7 @@ public class VkApiInitialisationService {
     private ProjectSettings conf;
 
     public String getGetCodeUrl() {
-        return String.format(conf.getGetCodeUrl(), conf.getApplicationId(), getRedirectUrl());
+        return String.format(conf.getGetCodeUrl(), conf.getApplicationId(), getRedirectUrl(), conf.getScope());
     }
 
     public String getRedirectUrl() {
