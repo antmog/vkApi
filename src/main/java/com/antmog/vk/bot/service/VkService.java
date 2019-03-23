@@ -15,7 +15,7 @@ public class VkService {
     @Autowired
     private ProjectSettings conf;
 
-    public void doSmth() {
+    public void doSomething() {
         GroupCommandParams params = GroupCommandParams.builder()
                 .ownerId(conf.getSalovaGroupId())
                 .count(5)

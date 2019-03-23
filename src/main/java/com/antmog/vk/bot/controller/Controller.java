@@ -41,7 +41,7 @@ public class Controller {
     @GetMapping("/test-endpoint")
     public ResponseEntity<HttpStatus> testEndpoint() {
         log.debug("test-endpoint exec");
-        vkService.doSmth();
+        vkService.doSomething();
         return new ResponseEntity<>(HttpStatus.OK);
     }
 }
