@@ -1,4 +1,4 @@
-package com.antmog.vk.bot.model;
+package com.antmog.vk.bot.model.function;
 
 @FunctionalInterface
 public interface ThrowingConsumer<T, E extends Exception> {

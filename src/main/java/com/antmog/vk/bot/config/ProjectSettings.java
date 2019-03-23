@@ -1,5 +1,6 @@
 package com.antmog.vk.bot.config;
 
+import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.stereotype.Component;
@@ -7,47 +8,15 @@ import org.springframework.stereotype.Component;
 @Component
 @EnableConfigurationProperties
 @ConfigurationProperties(prefix = "vk")
-public class YAMLConfig {
-
+@Data
+public class ProjectSettings {
     private String serverName;
     private String serverPort;
-    private String clientId;
-    private String clientSecret;
-    private String redirectUrl;
+    private String protectedKey;
+    private String serviceKey;
     private String getCodeUrl;
+    private String authTokenEndpoint;
+    private Integer applicationId;
 
-    public String getServerName() {
-        return serverName;
-    }
-
-    public void setServerName(final String serverName) {
-        this.serverName = serverName;
-    }
-
-    public String getServerPort() {
-        return serverPort;
-    }
-
-    public void setServerPort(final String serverPort) {
-        this.serverPort = serverPort;
-    }
-
-    public String getClientId() {
-        return clientId;
-    }
-
-    public void setClientId(String clientId) {
-        this.clientId = clientId;
-    }
-
-    public String getClientSecret() {
-        return clientSecret;
-    }
-
-    public void setClientSecret(String clientSecret) {
-        this.clientSecret = clientSecret;
-    }
-
-    // standard getters and setters
-
+    private Integer salovaGroupId;
 }

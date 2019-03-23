@@ -1,11 +1,19 @@
-package com.antmog.vk.bot.service;
+package com.antmog.vk.bot.commands;
 
 import java.util.function.Consumer;
 
 public class CommandsExecutor {
-    public void execute(Consumer consumer) {
+    public static <T> void execute(Consumer<T> consumer, T paramsObject) {
         try {
-            consumer.accept();
+            consumer.accept(paramsObject);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static <T> void execute(Runnable runnable) {
+        try {
+            runnable.run();
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -7,10 +7,10 @@ import org.springframework.stereotype.Service;
 import static com.antmog.vk.bot.utils.TechnicalSymbols.HOST_PORT_DELIMITER;
 
 @Service
-public class VkService {
+public class VkApiInitialisationService {
 
     @Autowired
-    ProjectSettings conf;
+    private ProjectSettings conf;
 
     public String getGetCodeUrl() {
         return String.format(conf.getGetCodeUrl(), conf.getApplicationId(), getRedirectUrl());

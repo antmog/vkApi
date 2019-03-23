@@ -1,4 +1,5 @@
-package com.antmog.vk.bot.model.command;
+package com.antmog.vk.bot.commands;
 
-public class CommandsParam {
+public class CommandsParams {
+    // TODO: 23.03.2019 add smth here (common)
 }

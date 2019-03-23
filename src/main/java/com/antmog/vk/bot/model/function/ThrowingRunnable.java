@@ -1,4 +1,6 @@
-package com.antmog.vk.bot.model;
+package com.antmog.vk.bot.model.function;
 
-public interface ThrowingRunnable {
+@FunctionalInterface
+public interface ThrowingRunnable<E extends Exception> {
+    void run() throws E;
 }
